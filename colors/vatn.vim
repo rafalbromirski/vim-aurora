@@ -2,22 +2,22 @@
 " Scheme: Chris Kempson (http://chriskempson.com)
 
 " GUI color definitions
-let s:gui00 = "#2b303b"
-let s:gui01 = "#343d46"
-let s:gui02 = "#4f5b66"
-let s:gui03 = "#65737e"
-let s:gui04 = "#a7adba"
-let s:gui05 = "#c0c5ce"
-let s:gui06 = "#dfe1e8"
-let s:gui07 = "#eff1f5"
-let s:gui08 = "#bf616a"
-let s:gui09 = "#d08770"
-let s:gui0A = "#ebcb8b"
-let s:gui0B = "#a3be8c"
-let s:gui0C = "#96b5b4"
-let s:gui0D = "#8fa1b3"
-let s:gui0E = "#b48ead"
-let s:gui0F = "#ab7967"
+let s:gui00 = "2b303b"
+let s:gui01 = "343d46"
+let s:gui02 = "4f5b66"
+let s:gui03 = "65737e"
+let s:gui04 = "a7adba"
+let s:gui05 = "c0c5ce"
+let s:gui06 = "dfe1e8"
+let s:gui07 = "eff1f5"
+let s:gui08 = "bf616a"
+let s:gui09 = "d08770"
+let s:gui0A = "ebcb8b"
+let s:gui0B = "a3be8c"
+let s:gui0C = "96b5b4"
+let s:gui0D = "8fa1b3"
+let s:gui0E = "b48ead"
+let s:gui0F = "ab7967"
 
 " Terminal color definitions
 let s:cterm00 = "00"
@@ -54,10 +54,10 @@ let g:colors_name = "vatn"
 " Highlighting function
 fun <sid>hi(group, guifg, guibg, ctermfg, ctermbg, attr)
   if a:guifg != ""
-    exec "hi " . a:group . " guifg=" . s:gui(a:guifg)
+    exec "hi " . a:group . " guifg=#" . s:gui(a:guifg)
   endif
   if a:guibg != ""
-    exec "hi " . a:group . " guibg=" . s:gui(a:guibg)
+    exec "hi " . a:group . " guibg=#" . s:gui(a:guibg)
   endif
   if a:ctermfg != ""
     exec "hi " . a:group . " ctermfg=" . s:cterm(a:ctermfg)
