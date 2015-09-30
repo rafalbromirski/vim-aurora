@@ -1,4 +1,3 @@
-vim-vatn
-========
+# vim-aurora
 
-vim-vatn is a custom theme based on base16-ocean
+vim-aurora - soon.
