@@ -262,7 +262,7 @@ exe "hi! TabLine"       .s:fg_window      .s:bg_comment     .s:fmt_revr
 exe "hi! TabLineFill"   .s:fg_window      .s:bg_none        .s:fmt_revr
 exe "hi! TabLineSel"    .s:fg_background  .s:bg_foreground  .s:fmt_revr
 
-exe "hi! Title"         .s:fg_window      .s:bg_yellow      .s:fmt_none
+exe "hi! Title"         .s:fg_yellow      .s:bg_background  .s:fmt_none
 
 exe "hi! Visual"        .s:fg_none        .s:bg_selection   .s:fmt_none
 "   VisualNos"
