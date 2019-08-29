@@ -216,11 +216,7 @@ endif
 " Vim Highlighting: (see :help highlight-groups)"
 " ----------------------------------------------------------------------------
 
-if has('gui_running')
-  exe "hi! Normal"        .s:fg_foreground  .s:bg_background  .s:fmt_none
-else
-  exe "hi! Normal"        .s:fg_foreground  .s:bg_none        .s:fmt_none
-endif
+exe "hi! Normal"        .s:fg_foreground  .s:bg_background  .s:fmt_none
 
 exe "hi! ColorColumn"   .s:fg_none        .s:bg_line        .s:fmt_none
 "   Conceal"
