@@ -323,6 +323,14 @@ exe "hi! qfLineNr"        .s:fg_yellow      .s:bg_none        .s:fmt_none
 "   qfError"
 
 " ----------------------------------------------------------------------------
+" GitGutter Syntax Highlighting:
+" ----------------------------------------------------------------------------
+
+exe "hi! GitGutterAdd"          .s:fg_green      .s:bg_none       .s:fmt_none
+exe "hi! GitGutterDelete"       .s:fg_red        .s:bg_none       .s:fmt_none
+exe "hi! GitGutterChange"       .s:fg_yellow     .s:bg_none       .s:fmt_none
+
+" ----------------------------------------------------------------------------
 " Diff Syntax Highlighting:
 " ----------------------------------------------------------------------------
 
