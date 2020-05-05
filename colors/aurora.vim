@@ -43,29 +43,29 @@ let s:grey_70 = '#cfcfdd'
 let s:grey_80 = '#'
 let s:grey_90 = '#'
 
-let s:red     = '#ff5f40'
+let s:red     = '#ff4040'
 let s:orange  = '#ff9326'
 let s:yellow  = '#ffcb65'
 let s:green   = '#9ceb4f'
 let s:aqua    = '#18ffe0'
 let s:blue    = '#31baff'
-let s:purple  = '#a292ff'
+let s:purple  = '#9d8cff'
 
-let s:darkred     = "#66261a"
+let s:darkred     = "#661a1a"
 let s:darkorange  = "#663b0f"
 let s:darkyellow  = "#665128"
 let s:darkgreen   = "#3e5e20"
 let s:darkaqua    = "#0a665a"
 let s:darkblue    = "#144a66"
-let s:darkpurple  = "#413a66"
+let s:darkpurple  = "#3f3866"
 
-let s:lightred     = "#ffbfb3"
+let s:lightred     = "#ffb3b3"
 let s:lightorange  = "#ffd4a8"
 let s:lightyellow  = "#ffeac1"
 let s:lightgreen   = "#d7f7b9"
 let s:lightaqua    = "#a3fff3"
 let s:lightblue    = "#ade3ff"
-let s:lightpurple  = "#dad3ff"
+let s:lightpurple  = "#d8d1ff"
 
 let s:none = "NONE"
 
