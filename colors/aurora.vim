@@ -32,16 +32,12 @@ set background=dark
 let s:black     = '#000000'
 let s:white     = '#ffffff'
 
-let s:grey_05 = '#0b0b14'
-let s:grey_10 = '#1b1b24'
-let s:grey_20 = '#262631'
-let s:grey_30 = '#3a3a47'
-let s:grey_40 = '#'
-let s:grey_50 = '#69697c'
-let s:grey_60 = '#'
-let s:grey_70 = '#cfcfdd'
-let s:grey_80 = '#'
-let s:grey_90 = '#'
+let s:accent_1 = '#0b0b14'
+let s:accent_2 = '#1b1b24'
+let s:accent_3 = '#262631'
+let s:accent_4 = '#3a3a47'
+let s:accent_5 = '#69697c'
+let s:accent_6 = '#cfcfdd'
 
 let s:red          = '#ff4040'
 let s:orange       = '#ff9326'
@@ -112,73 +108,73 @@ endfunction
 " Vim Highlighting: (see :help highlight-groups)"
 " ----------------------------------------------------------------------------
 
-call s:HL('Normal', s:grey_70, s:grey_10, s:none)
+call s:HL('Normal', s:accent_6, s:accent_2, s:none)
 
-call s:HL('ColorColumn', s:none, s:grey_20, s:none)
+call s:HL('ColorColumn', s:none, s:accent_3, s:none)
 " call s:HL('Conceal', ...)
 " call s:HL('Cursor', ...)
 " call s:HL('CursorIM', ...)
 
-call s:HL('CursorColumn', s:none, s:grey_20, s:none)
-call s:HL('CursorLine', s:none, s:grey_20, s:none)
+call s:HL('CursorColumn', s:none, s:accent_3, s:none)
+call s:HL('CursorLine', s:none, s:accent_3, s:none)
 
 call s:HL('Directory', s:purple, s:none, s:none)
 
-call s:HL('DiffAdd', s:grey_10, s:green, s:none)
+call s:HL('DiffAdd', s:accent_2, s:green, s:none)
 call s:HL('DiffChange', s:lightpurple, s:darkpurple, s:none)
-call s:HL('DiffDelete', s:grey_10, s:red, s:none)
-call s:HL('DiffText', s:grey_10, s:blue, s:none)
+call s:HL('DiffDelete', s:accent_2, s:red, s:none)
+call s:HL('DiffText', s:accent_2, s:blue, s:none)
 
 call s:HL('ErrorMsg', s:red, s:none, s:none)
-call s:HL('VertSplit', s:grey_20, s:none, s:none)
-call s:HL('Folded', s:grey_50, s:none, s:none)
-call s:HL('FoldColumn', s:grey_50, s:none, s:none)
+call s:HL('VertSplit', s:accent_3, s:none, s:none)
+call s:HL('Folded', s:accent_5, s:none, s:none)
+call s:HL('FoldColumn', s:accent_5, s:none, s:none)
 call s:HL('SignColumn', s:none, s:none, s:none)
 " call s:HL('Incsearch', s:none, s:none, s:none)
 
-call s:HL('LineNr', s:grey_30, s:none, s:none)
+call s:HL('LineNr', s:accent_4, s:none, s:none)
 call s:HL('CursorLineNr', s:yellow, s:none, s:none)
-call s:HL('MatchParen', s:grey_10, s:purple, s:none)
+call s:HL('MatchParen', s:accent_2, s:purple, s:none)
 call s:HL('ModeMsg', s:green, s:none, s:none)
 call s:HL('MoreMsg', s:green, s:none, s:none)
-call s:HL('NonText', s:grey_30, s:none, s:none)
+call s:HL('NonText', s:accent_4, s:none, s:none)
 
-call s:HL('Pmenu', s:grey_70, s:grey_30, s:none)
-call s:HL('PmenuSel', s:grey_10, s:purple, s:none)
+call s:HL('Pmenu', s:accent_6, s:accent_4, s:none)
+call s:HL('PmenuSel', s:accent_2, s:purple, s:none)
 " call s:HL('PmenuSbar', ...)
 " call s:HL('PmenuSbar', ...)
 
 call s:HL('Question', s:green, s:none, s:none)
-call s:HL('Search', s:grey_10, s:yellow, s:none)
-call s:HL('SpecialKey', s:grey_30, s:none, s:none)
+call s:HL('Search', s:accent_2, s:yellow, s:none)
+call s:HL('SpecialKey', s:accent_4, s:none, s:none)
 call s:HL('SpellCap', s:blue, s:darkblue, s:underline)
 call s:HL('SpellLocal', s:aqua, s:darkaqua, s:underline)
 call s:HL('SpellBad', s:red, s:darkred, s:underline)
 call s:HL('SpellRare', s:purple, s:darkpurple, s:underline)
 
-call s:HL('StatusLine', s:grey_70, s:grey_05, s:none)
-call s:HL('StatusLineNc', s:grey_30, s:grey_05, s:none)
-call s:HL('StatusLineTerm', s:grey_05, s:purple, s:none)
-call s:HL('StatusLineTermNc', s:grey_05, s:darkpurple, s:none)
+call s:HL('StatusLine', s:accent_6, s:accent_1, s:none)
+call s:HL('StatusLineNc', s:accent_4, s:accent_1, s:none)
+call s:HL('StatusLineTerm', s:accent_1, s:purple, s:none)
+call s:HL('StatusLineTermNc', s:accent_1, s:darkpurple, s:none)
 
-call s:HL('TabLine', s:grey_50, s:grey_20, s:none)
-call s:HL('TabLineFill', s:grey_20, s:grey_20, s:none)
-call s:HL('TabLineSel', s:grey_70, s:grey_10, s:none)
+call s:HL('TabLine', s:accent_5, s:accent_3, s:none)
+call s:HL('TabLineFill', s:accent_3, s:accent_3, s:none)
+call s:HL('TabLineSel', s:accent_6, s:accent_2, s:none)
 
 call s:HL('Title', s:yellow, s:none, s:none)
 
-call s:HL('Visual', s:none, s:grey_30, s:none)
+call s:HL('Visual', s:none, s:accent_4, s:none)
 " call s:HL('VisualNos', ...)
 
 call s:HL('WarningMsg', s:red, s:none, s:none)
 " call s:HL('LongLineWarning', ...)
-call s:HL('WildMenu', s:grey_10, s:yellow, s:none)
+call s:HL('WildMenu', s:accent_2, s:yellow, s:none)
 
 " ----------------------------------------------------------------------------
 " Generic Syntax: (see :help group-name)
 " ----------------------------------------------------------------------------
 
-call s:HL('Comment', s:grey_50, s:none, s:none)
+call s:HL('Comment', s:accent_5, s:none, s:none)
 
 call s:HL('Constant', s:red, s:none, s:none)
 call s:HL('String', s:green, s:none, s:none)
@@ -238,7 +234,7 @@ call s:HL('GitGutterChange', s:yellow, s:none, s:none)
 " Terminal Syntax:
 " ----------------------------------------------------------------------------
 
-call s:HL('Terminal', s:grey_70, s:grey_05, s:none)
+call s:HL('Terminal', s:accent_6, s:accent_1, s:none)
 
 if exists('*term_setansicolors')
   " 0    black
@@ -266,8 +262,8 @@ if exists('*term_setansicolors')
         \ s:blue,
         \ s:purple,
         \ s:aqua,
-        \ s:grey_70,
-        \ s:grey_50,
+        \ s:accent_6,
+        \ s:accent_5,
         \ s:red,
         \ s:green,
         \ s:yellow,
