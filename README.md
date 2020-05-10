@@ -1,3 +1,5 @@
+## vim-aurora
+
 ![vim-aurora](./assets/preview.png)
 
 ---
