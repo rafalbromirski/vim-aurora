@@ -14,6 +14,15 @@ Install it using your favourite package manager
 Plug 'rafalbromirski/vim-aurora'
 ```
 
+Update your `vimrc`:
+
+```vim
+set termguicolors
+set background=dark
+colorscheme aurora
+```
+
+
 ### Usage
 
 Currently it only supports `dark` background. There is no plan to release another version in the nearest future. Small
