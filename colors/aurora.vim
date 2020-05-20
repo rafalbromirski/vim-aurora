@@ -275,6 +275,38 @@ if exists('*term_setansicolors')
 endif
 
 " ----------------------------------------------------------------------------
+" Go Syntax:
+" ----------------------------------------------------------------------------
+" requires g:go_highlight flags
+
+call s:HL('goBuildKeyword', s:red, s:none, s:none)
+call s:HL('goBuildDirectives', s:purple, s:none, s:none)
+call s:HL('goType', s:red, s:none, s:none)
+
+" ----------------------------------------------------------------------------
+" JavaScript Syntax:
+" ----------------------------------------------------------------------------
+
+call s:HL('jsImport', s:aqua, s:none, s:none)
+
+" ----------------------------------------------------------------------------
+" Ruby Syntax:
+" ----------------------------------------------------------------------------
+
+call s:HL('rubyInteger', s:red, s:none, s:none)
+call s:HL('rubyAttribute', s:blue, s:none, s:none)
+call s:HL('rubySymbol', s:red, s:none, s:none)
+call s:HL('rubyConstant', s:red, s:none, s:none)
+call s:HL('rubyClassName', s:red, s:none, s:none)
+call s:HL('rubyMethodName', s:orange, s:none, s:none)
+call s:HL('rubyInclude', s:red, s:none, s:none)
+call s:HL('rubyBlockParameterList', s:aqua, s:none, s:none)
+call s:HL('rubyInstanceVariable', s:purple, s:none, s:none)
+call s:HL('rubyClass', s:yellow, s:none, s:none)
+call s:HL('rubyMacro', s:blue, s:none, s:none)
+call s:HL('rubySharpBang', s:accent_5, s:none, s:none)
+
+" ----------------------------------------------------------------------------
 " License:
 " ----------------------------------------------------------------------------
 
