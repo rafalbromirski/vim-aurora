@@ -112,9 +112,9 @@ call s:HL('Normal', s:accent_6, s:accent_2, s:none)
 
 call s:HL('ColorColumn', s:none, s:accent_3, s:none)
 " call s:HL('Conceal', ...)
-" call s:HL('Cursor', ...)
-" call s:HL('CursorIM', ...)
 
+call s:HL('Cursor', s:accent_2, s:accent_6, s:none)
+" call s:HL('CursorIM', s:accent_2, s:accent_6, s:none)
 call s:HL('CursorColumn', s:none, s:accent_3, s:none)
 call s:HL('CursorLine', s:none, s:accent_3, s:none)
 
