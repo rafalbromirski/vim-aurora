@@ -21,6 +21,7 @@ highlight! clear
 syntax reset
 
 let g:colors_name = "aurora"
+set cursorline
 set background=dark
 
 " ----------------------------------------------------------------------------
