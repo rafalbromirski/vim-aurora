@@ -29,15 +29,15 @@ set background=dark
 " resources:
 " - https://maketintsandshades.com/
 
-let s:black     = '#000000'
-let s:white     = '#ffffff'
+let s:black        = '#000000'
+let s:white        = '#ffffff'
 
-let s:accent_1 = '#0b0b14'
-let s:accent_2 = '#1b1b24'
-let s:accent_3 = '#262631'
-let s:accent_4 = '#3a3a47'
-let s:accent_5 = '#69697c'
-let s:accent_6 = '#cfcfdd'
+let s:accent_1     = '#0b0b14'
+let s:accent_2     = '#1b1b24'
+let s:accent_3     = '#262631'
+let s:accent_4     = '#3a3a47'
+let s:accent_5     = '#69697c'
+let s:accent_6     = '#cfcfdd'
 
 let s:red          = '#ff4040'
 let s:orange       = '#ff9326'
@@ -46,6 +46,7 @@ let s:green        = '#9ceb4f'
 let s:aqua         = '#18ffe0'
 let s:blue         = '#31baff'
 let s:purple       = '#9d8cff'
+let s:pink         = '#ff70ff'
 
 let s:darkred      = "#661a1a"
 let s:darkorange   = "#663b0f"
@@ -113,7 +114,7 @@ call s:HL('Normal', s:accent_6, s:accent_2, s:none)
 call s:HL('ColorColumn', s:none, s:accent_3, s:none)
 " call s:HL('Conceal', ...)
 
-call s:HL('Cursor', s:accent_2, s:accent_6, s:none)
+call s:HL('Cursor', s:accent_2, s:red, s:none)
 " call s:HL('CursorIM', s:accent_2, s:accent_6, s:none)
 call s:HL('CursorColumn', s:none, s:accent_3, s:none)
 call s:HL('CursorLine', s:none, s:accent_3, s:none)
@@ -134,7 +135,8 @@ call s:HL('SignColumn', s:none, s:none, s:none)
 
 call s:HL('LineNr', s:accent_4, s:none, s:none)
 call s:HL('CursorLineNr', s:yellow, s:none, s:none)
-call s:HL('MatchParen', s:accent_2, s:purple, s:none)
+call s:HL('MatchParen', s:red, s:accent_2, s:none)
+" call s:HL('MatchParen', s:accent_2, s:purple, s:none)
 call s:HL('ModeMsg', s:green, s:none, s:none)
 call s:HL('MoreMsg', s:green, s:none, s:none)
 call s:HL('NonText', s:accent_4, s:none, s:none)
@@ -273,6 +275,38 @@ if exists('*term_setansicolors')
         \ s:white,
         \ ]
 endif
+
+" ----------------------------------------------------------------------------
+" Go Syntax:
+" ----------------------------------------------------------------------------
+" requires g:go_highlight flags
+
+call s:HL('goBuildKeyword', s:red, s:none, s:none)
+call s:HL('goBuildDirectives', s:purple, s:none, s:none)
+call s:HL('goType', s:red, s:none, s:none)
+
+" ----------------------------------------------------------------------------
+" JavaScript Syntax:
+" ----------------------------------------------------------------------------
+
+call s:HL('jsImport', s:aqua, s:none, s:none)
+
+" ----------------------------------------------------------------------------
+" Ruby Syntax:
+" ----------------------------------------------------------------------------
+
+call s:HL('rubyInteger', s:red, s:none, s:none)
+call s:HL('rubyAttribute', s:blue, s:none, s:none)
+call s:HL('rubySymbol', s:red, s:none, s:none)
+call s:HL('rubyConstant', s:red, s:none, s:none)
+call s:HL('rubyClassName', s:red, s:none, s:none)
+call s:HL('rubyMethodName', s:orange, s:none, s:none)
+call s:HL('rubyInclude', s:red, s:none, s:none)
+call s:HL('rubyBlockParameterList', s:aqua, s:none, s:none)
+call s:HL('rubyInstanceVariable', s:purple, s:none, s:none)
+call s:HL('rubyClass', s:yellow, s:none, s:none)
+call s:HL('rubyMacro', s:blue, s:none, s:none)
+call s:HL('rubySharpBang', s:accent_5, s:none, s:none)
 
 " ----------------------------------------------------------------------------
 " License:
