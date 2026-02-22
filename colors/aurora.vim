@@ -128,6 +128,7 @@ call s:HL('DiffText', s:accent_2, s:blue, s:none)
 
 call s:HL('ErrorMsg', s:red, s:none, s:none)
 call s:HL('VertSplit', s:accent_3, s:none, s:none)
+call s:HL('WinSeparator', s:accent_3, s:none, s:none)
 call s:HL('Folded', s:accent_5, s:none, s:none)
 call s:HL('FoldColumn', s:accent_5, s:none, s:none)
 call s:HL('SignColumn', s:none, s:none, s:none)
